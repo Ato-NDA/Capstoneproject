@@ -1,0 +1,26 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Configuration files with sensitive information
+config.php
+
+# Temporary files
+*.log
+*.tmp
+
+# Vendor directories
+vendor/
+
+# Node modules if you're using any JavaScript packages
+node_modules/
+
+# Uploaded files and images (if you want to exclude them)
+uploads/*
+!uploads/.gitkeep

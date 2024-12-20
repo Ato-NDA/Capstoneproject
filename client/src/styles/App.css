@@ -1,0 +1,112 @@
+:root {
+  --primary-brown: #8B4513;
+  --light-brown: #DEB887;
+  --accent-pink: #FFB6C1;
+  --khaki: #F0E68C;
+  --text-dark: #333333;
+  --text-light: #FFFFFF;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #FFF8F3;
+  color: var(--text-dark);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  background-color: var(--primary-brown);
+  color: var(--text-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--light-brown);
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border: 2px solid var(--light-brown);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.camera-card {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.camera-card:hover {
+  transform: translateY(-5px);
+}
+
+.camera-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.camera-card-content {
+  padding: 15px;
+}
+
+.camera-card h3 {
+  color: var(--primary-brown);
+  margin-bottom: 10px;
+}
+
+.camera-card .price {
+  color: var(--text-dark);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.filters {
+  background-color: var(--khaki);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+}
+
+.notification {
+  background-color: var(--accent-pink);
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  margin: 10px 0;
+}
